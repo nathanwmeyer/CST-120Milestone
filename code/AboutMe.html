@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/mysite.css">
+  <style>
+    #educational-experience-table {
+      border-collapse: collapse;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    #educational-experience-table,
+    th,
+    td {
+      border: 4px solid rgb(78, 45, 2);
+    }
+
+    #educational-experience-table th {
+      color: white;
+      background-color: rgb(14, 77, 30);
+    }
+
+    #educational-experience-table td:nth-child(1) {
+      font-weight: bold;
+    }
+  </style>
+  <script src="js/myCode.js"></script>
+  <!-- NavBar containing links to all pages in the website -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(14, 77, 30)">
+    <a class="navbar-brand" href="index.html">Nathan M.</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="AboutMe.html">About Me</a>
+        <a class="nav-item nav-link" href="ContactMe.html">Contact Me</a>
+        <a class="nav-item nav-link" href="SkillList.html">List of Skills</a>
+        <a class="nav-item nav-link" href="ProjectVideos.html">Things to Share</a>
+      </div>
+    </div>
+  </nav>
+</head>
+<!--This is a incomplete version of the About Me page of the website, and will be completed during future versions-->
+
+<body>
+  <h1 align="center">ABOUT ME</h1>
+  <hr />
+  <!--A record of personal history and academic achievements, contained in a Bootstrap grid-->
+  <h1>About me:</h1>
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+          <p>
+            My name is Nathan Meyer. I am 22 years old and currently a student at
+            Grand Canyon University.
+          </p>
+          <p>
+            History:I was homeschooled by my parents through a homeschooling
+            organization called Bethel Baptist Academy. I earned my High-School
+            diploma in June of 2016, shortly afterward I started attending Cypress
+            College in California. I would attend Cypress for about 4 years, earning
+            a certificate in Computer Programming before transferring over to Grand
+            Canyon University in the Fall of 2020.
+          </p>
+          <p>
+            Interests: My current interest is in software development, which I am a
+            course for atGrand Canyon University. When not working on schoolwork, I
+            am usually either listening to music, helping around the house, or
+            playing video games.
+          </p>
+          <p>
+            Experiences: Currently I have a high school diploma and a certificate in
+            computer programming. I also perform clerical duties at my church, and
+            in the past have helped my church put on events, such as various parties
+            for Halloween, 4th of July, and Christmas, as well as a 5-day summer
+            program for children.
+          </p>
+          <p>
+            Plans:I plan to earn a Bachelor’s in Software Development at Grand
+            Canyon University. After I earn my BS, I plan to search for a job in my
+            relevant field and gain experience that I can use to secure a position
+            for myself.
+          </p>
+        </div>
+        <div class="col-sm-6" align="center">
+          <!--Images of the logos of the schools, colleges, and universities I have attended with buttons to switch between them-->
+          
+          <h5 id="imageText" align="center">Bethel Baptist Academy Logo</h5>
+          <p align="center">
+            <img id="schoolImage" class=zoomIn1 src="images/Bethel Baptist School.png" alt="Bethel Baptist School Logo" />
+          </p>
+          <p align="center">
+            <button onclick="javascript:change(false)">Previous</button><button onclick="javascript:change(true)">Next</button>
+          </p>
+        </div>
+    </div>
+  </div>
+  <h1>Schools and Universities Attended:</h1>
+  <!-- Bootstrap table of academic achievements, alongside where they were obtained, as well as a brief description-->
+  <table id="educational-experience-table" class="table table-sm">
+  <thead>
+    <tr>
+      <th scope="col">Educational Level</th>
+      <th scope="col">School or University</th>
+      <th scope="col">Brief Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="left">High-School Diploma</td>
+      <td align="center">Bethel Baptist Academy</td>
+      <td align="left">
+        K-12 education supported by Bethel Baptist Academy followed by
+        High-School diploma earned in June of 2016.
+      </td>
+    </tr>
+    <tr>
+      <td align="left">Certificate in Computer Programming</td>
+      <td align="center">Cypress College</td>
+      <td align="left">
+        Certificate in Computer Programming alongside General Education
+        credits that were then transferred.
+      </td>
+    </tr>
+    <tr>
+      <td align="left">(In Progress) Bachelor’s in Software Development</td>
+      <td align="center">Grand Canyon University</td>
+      <td align="left">
+        Bachelor's in Software Development currently in the process of being
+        obtained.
+      </td>
+    </tr>
+  </tbody>
+  </table>
+  <!--A Useless Button, clicking this button ten times will change its text-->
+  <p align="center">
+    <button id="uselessButton" onclick="javascript:uselessButton()" >I'm a Useless Button!</button>
+  </p>
+</body>
+
+</html>

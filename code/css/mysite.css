@@ -1,0 +1,150 @@
+/*the webpage is meant to have a fall theme*/
+/*background color*/
+body {
+    margin-top: 20px;
+    margin-left: 20px;
+    background: rgb(241, 205, 181);
+}
+
+/*header colors and fonts*/
+h1 {
+    color: #9c630d;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 32px;
+    margin: 0 0 16px;
+}
+
+h2 {
+    color: #9c630d;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0 0 8px;
+}
+
+h3 {
+    color: #9c630d;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 0 8px;
+}
+
+h4 {
+    color: #9c630d;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 0 8px;
+}
+
+h5 {
+    color: rgb(78, 45, 2);
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 0 6px;
+}
+
+h6 {
+    color: #9c630d;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 0 8px;
+}
+
+/*paragraph color and font*/
+p {
+    font-family: Arial;
+    font-size: 18px;
+    margin: 16px 0 24px;
+}
+
+/*link color and font*/
+a {
+    font-family: Arial;
+    color: rgb(14, 77, 30);
+    background: rgba(233, 222, 222, 0);
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*font for the development notes*/
+.development {
+    font-family: "Courier New", Courier, monospace;
+    color: DarkRed;
+    font-size: 18px;
+}
+
+/*round the corners of images*/
+img {
+    border-radius: 8px;
+}
+
+/*animations using transition: zoomIn 1-3 resize the images in the about me section to double their original size. LongSpin simply makes the image spin 5 times over 10 seconds*/
+.zoomIn1 {
+    width: 225px;
+    height: 150px;
+    transition: width 1s, height 1s, transform 1s;
+}
+
+.zoomIn1:hover {
+    width: 300px;
+    height: 200px;
+    transform: rotate(360deg);
+}
+
+.zoomIn2 {
+    width: 200px;
+    height: 200px;
+    transition: width 1s, height 1s, transform 1s;
+}
+
+.zoomIn2:hover {
+    width: 275px;
+    height: 275px;
+    transform: rotate(360deg);
+}
+
+.zoomIn3 {
+    width: 200px;
+    height: 200px;
+    transition: width 1s, height 1s, transform 1s;
+}
+
+.zoomIn3:hover {
+    width: 275px;
+    height: 275px;
+    transform: rotate(360deg);
+}
+
+.longSpin {
+    transition: transform 10s;
+}
+
+.longSpin:hover {
+    transform: rotate(1800deg);
+}
+
+/*animation using keyframes*/
+.linkRecolor {
+    background: 233, 222, 222, 0;
+}
+
+.linkRecolor:hover {
+    animation: linkColor 2s infinite;
+}
+
+@keyframes linkColor {
+    from {
+        background-color: rgba(233, 222, 222, 0);
+    }
+
+    to {
+        background-color: rgb(224, 141, 46);
+    }
+}
